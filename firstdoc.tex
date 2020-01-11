@@ -1,4 +1,60 @@
 \documentclass{article}
+
+\title{My first document}
+\date{2020-01-11}
+\author{Thomas Busby}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+
 \begin{document}
+  \pagenumbering{gobble}
+  \maketitle
+  \newpage
+  \pagenumbering{arabic}
+
+  \section{This is a section}
+
   Hello World!
+
+  \subsection{This is a subsection}
+
+  Blah blah blah
+
+  \begin{equation}
+    f(x) = x^2
+  \end{equation}
+
+  \paragraph{Paragraph}
+
+  Some more text. Some more text. Some more text. Some more text. Some more text. Some more text. Some more text. Some more text. Some more text. Some more text.
+
+  \begin{equation*}
+    f(x) = x^2
+  \end{equation*}
+
+  \subparagraph{Subparagraph}
+
+  Even more text. Even more text. Even more text. Even more text. Even more text. Even more text. Even more text. Even more text. Even more text. Even more text.
+
+  This formula $f(x) = x^2$ is an example of inline formulas.
+
+  \section{Some fractions}
+
+  \begin{align*}
+    f(x) &= x^2\\
+    g(x) &= \frac{1}{x}\\
+    F(x) &= \int^a_b \frac{1}{3}x^3
+  \end{align*}
+
+  \section{A picture}
+
+  \begin{figure}[h!]
+    \includegraphics[width=100px]{boat.png}
+    \caption{A boat.}
+    \label{fig:boat1}
+  \end{figure}
+
+  Figure \ref{fig:boat1} shows a boat.
+
 \end{document}
